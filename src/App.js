@@ -10,7 +10,7 @@ import { Root } from "./containers/Root";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={"/twitter_clone_react"}>
       <Routes>
         <Route path="/" element={<Root />} />
         <Route path="/signup" element={<Signup />} />
