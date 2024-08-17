@@ -7,7 +7,7 @@ import { SignupNextButton } from "../../button/SignupNextButton";
 import { SignupStateEnum } from "../../../enum/SignupStateEnum";
 
 const dialogContent = css`
-  height: 450px;
+  height: 500px;
   width: 550px;
   display: flex;
   justify-content: center;

@@ -5,13 +5,10 @@ import { css } from "@emotion/react";
 const buttonStyle = css`
   border-radius: 30px;
   margin-bottom: 30px;
-  height: 45px;
-  width: 300px;
+  height: 40px;
+  width: 100%;
   border: none;
   color: black;
-`;
-
-const divStyle = css`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,10 +17,8 @@ const divStyle = css`
 
 export function SignupButton({ buttunValue, onClick }) {
   return (
-    <button css={buttonStyle}>
-      <div css={divStyle} onClick={onClick}>
-        {buttunValue}
-      </div>
+    <button css={buttonStyle} onClick={onClick}>
+      {buttunValue}
     </button>
   );
 }

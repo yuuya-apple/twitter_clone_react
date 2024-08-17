@@ -18,15 +18,21 @@ const dialogTitle = css`
   justify-content: center;
   align-items: center;
   width: 550px;
+  height: 52px;
+  padding: 0 24px;
 `;
 
 const xIconStyle = css`
   font-size: 33px;
   color: white;
+  display: flex;
+  align-items: center;
 `;
 
 const headDiv = css`
   width: 100%;
+  display: flex;
+  align-items: center;
 `;
 
 const cloneButton = css`
@@ -34,6 +40,8 @@ const cloneButton = css`
   background: none;
   border: none;
   color: white;
+  display: flex;
+  align-items: center;
 `;
 
 const cloneIcon = css`

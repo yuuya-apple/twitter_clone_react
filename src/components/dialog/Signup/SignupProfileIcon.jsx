@@ -124,7 +124,10 @@ export function SignupProfileIcon({ setSignupState }) {
 
   const handleNextClick = () => setSignupState(SignupStateEnum.USER_NAME);
 
-  const handleDeleteIconClick = () => setUserIcon(null);
+  const handleDeleteIconClick = () => {
+    setUserIcon(null);
+    fileInputRef.current.value = null;
+  };
 
   const renderIconDiv = () => {
     if (userIcon === null) {
@@ -179,7 +182,7 @@ export function SignupProfileIcon({ setSignupState }) {
           ) : (
             <SignupNextButton
               disabled={false}
-              value="次へ"
+              value={"次へ"}
               onClick={handleNextClick}
             />
           )}
