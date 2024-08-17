@@ -16,7 +16,6 @@ const iconStyle = css`
 const dialogTitle = css`
   padding: 0;
   width: 550px;
-  background-color: black;
   border-bottom: 1px solid rgba(187, 187, 187, 0.3);
   flex-flow: column;
 
@@ -33,7 +32,6 @@ const dialogTitle = css`
 const dialogActions = css`
   padding: 0;
   height: 55px;
-  background-color: black;
   width: 550px;
   min-width: 200px;
 
@@ -112,6 +110,7 @@ export function SignupPromotionDialog({ isSignup, setIsSignup }) {
       PaperProps={{
         sx: {
           borderRadius: "20px",
+          backgroundColor: "black",
         },
       }}
       css={backGround}

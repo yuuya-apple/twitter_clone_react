@@ -17,7 +17,6 @@ const dialogTitle = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
   width: 550px;
 `;
 
@@ -80,6 +79,7 @@ export function SignupDialog({ isSignup, setIsSignup }) {
       PaperProps={{
         sx: {
           borderRadius: "20px",
+          backgroundColor: "black",
         },
       }}
       css={backGround}

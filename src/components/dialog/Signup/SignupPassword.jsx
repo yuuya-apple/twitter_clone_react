@@ -9,7 +9,6 @@ import { SignupStateEnum } from "../../../enum/SignupStateEnum";
 const dialogContent = css`
   height: 450px;
   width: 550px;
-  background-color: black;
   display: flex;
   justify-content: center;
 `;
@@ -20,7 +19,6 @@ const dialogActions = css`
   width: 550px;
   display: flex;
   justify-content: center;
-  background-color: black;
 `;
 
 const contentDiv = css`
@@ -61,7 +59,7 @@ export function SignupPassword({ setSignupState }) {
           <SignupNextButton
             onClick={handleOnClick}
             disabled={false}
-            value={"登録"}
+            value="登録"
           ></SignupNextButton>
         </div>
       </DialogActions>

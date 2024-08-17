@@ -10,7 +10,6 @@ import { SignupStateEnum } from "../../../enum/SignupStateEnum";
 const dialogContent = css`
   height: 550px;
   width: 550px;
-  background-color: black;
 `;
 
 const h1Style = css`

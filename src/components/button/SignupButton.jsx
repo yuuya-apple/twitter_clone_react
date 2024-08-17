@@ -8,6 +8,7 @@ const buttonStyle = css`
   height: 45px;
   width: 300px;
   border: none;
+  color: black;
 `;
 
 const divStyle = css`

@@ -12,7 +12,6 @@ import defaultIcon from "../../../images/default_profile.png";
 const dialogContent = css`
   height: 450px;
   width: 550px;
-  background-color: black;
   display: flex;
   justify-content: center;
 `;
@@ -23,7 +22,6 @@ const dialogActions = css`
   width: 550px;
   display: flex;
   justify-content: center;
-  background-color: black;
 `;
 
 const contentDiv = css`
@@ -181,7 +179,7 @@ export function SignupProfileIcon({ setSignupState }) {
           ) : (
             <SignupNextButton
               disabled={false}
-              value={"次へ"}
+              value="次へ"
               onClick={handleNextClick}
             />
           )}

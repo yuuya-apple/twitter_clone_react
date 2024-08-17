@@ -9,10 +9,10 @@ const buttonStyle = css`
   border: none;
   font-size: 17px;
   font-weight: 700;
+  color: black;
 
   &:disabled {
     background-color: gray;
-    color: black;
   }
 `;
 

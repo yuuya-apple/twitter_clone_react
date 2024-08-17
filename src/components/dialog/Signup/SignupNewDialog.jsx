@@ -10,7 +10,6 @@ import { SignupNextButton } from "../../button/SignupNextButton";
 const dialogContent = css`
   height: 450px;
   width: 550px;
-  background-color: black;
   display: flex;
   justify-content: center;
 `;
@@ -21,7 +20,6 @@ const dialogActions = css`
   width: 550px;
   display: flex;
   justify-content: center;
-  background-color: black;
 `;
 
 const actionsDiv = css`
@@ -94,7 +92,7 @@ export function SignupNewDialog({ setSignupState }) {
           <SignupNextButton
             onClick={handleOnClick}
             disabled={false}
-            value={"次へ"}
+            value="次へ"
           ></SignupNextButton>
         </div>
       </DialogActions>

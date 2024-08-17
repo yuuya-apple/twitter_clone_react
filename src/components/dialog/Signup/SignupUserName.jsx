@@ -10,7 +10,6 @@ import { SignupText } from "../../input/SignupText";
 const dialogContent = css`
   height: 450px;
   width: 550px;
-  background-color: black;
   display: flex;
   justify-content: center;
 `;
@@ -21,7 +20,6 @@ const dialogActions = css`
   width: 550px;
   display: flex;
   justify-content: center;
-  background-color: black;
 `;
 
 const contentDiv = css`
