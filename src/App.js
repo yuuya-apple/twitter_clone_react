@@ -1,30 +1,23 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-
-const aaa = css`
-  background-color: blue;
-`;
+import { Signup } from "./containers/Signup";
+import { Home } from "./containers/Home";
+import { NotFound } from "./containers/NotFound";
+import { Root } from "./containers/Root";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p css={aaa}>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename={"/twitter_clone_react"}>
+      <Routes>
+        <Route path="/" element={<Root />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
