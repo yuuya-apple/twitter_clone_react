@@ -10,8 +10,8 @@ import { Root } from "./containers/Root";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
         <Route path="/" element={<Root />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<Home />} />
